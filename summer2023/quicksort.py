@@ -1,5 +1,4 @@
 def _quicksort_internal(arr, lo, hi):
-    print(lo, hi)
     if (hi - lo) < 1:
         return None
 
@@ -23,8 +22,14 @@ def quicksort(arr):
     _quicksort_internal(arr, 0, len(arr) - 1)
 
 if __name__ == "__main__":
-    x = [5, 6,  -1,  3,  7, 1,  2,  -3,  4,  -2,  0,  9,  8]
-    quicksort(x)
-    print(x)
-    print(quicksort([0]))
-    print(quicksort([0,  0,  0,  0,  0,  100]))
+    arr1 = [5, 6,  -1,  3,  7, 1,  2,  -3,  4,  -2,  0,  9,  8]
+    arr2 = [0]
+    arr3 = [0,  0,  0,  0,  0,  100]
+
+    quicksort(arr1)
+    quicksort(arr2)
+    quicksort(arr3)
+
+    print(arr1)
+    print(arr2)
+    print(arr3)
